@@ -5,44 +5,46 @@
 
 
 <!-- Mirrored from www.coffeeandcreative.in/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Aug 2021 05:40:06 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/><!-- /Added by HTTrack -->
 <head>
 
-        <title>A Square London</title>
+    <title>A Square London</title>
 
-        <meta charset="utf-8">
+    <meta charset="utf-8">
 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="shortcut icon" href="{% static 'img/misc/favicon.png' %}">
+    <link rel="shortcut icon" href="{% static 'img/misc/favicon.png' %}">
 
-        <meta name="description" content="">
+    <meta name="description" content="">
 
-		<meta name="keywords" content="">
+    <meta name="keywords" content="">
 
-        <meta name="author" content="">
+    <meta name="author" content="">
 
 
-<!-- Bootstrap Core CSS-->
+    <!-- Bootstrap Core CSS-->
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
     <!-- Custom CSS-->
     <link href="{% static 'css/universal.css' %}" rel="stylesheet">
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PMMPR35');</script>
-<!-- End Google Tag Manager -->
-<meta name="google-site-verification" content="" />
+})(window,document,'script','dataLayer','GTM-PMMPR35');
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta name="google-site-verification" content=""/>
 
-        <link rel="stylesheet" href="{% static 'owlcarousel/assets/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'owlcarousel/assets/owl.carousel.min.css' %}">
 
-        <link rel="stylesheet" href="{% static 'owlcarousel/assets/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'owlcarousel/assets/owl.theme.default.min.css' %}">
 
-        <style>
+    <style>
 
             .owl-next span{
 
@@ -80,27 +82,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
             }
 
-        </style>
 
-        <link rel="canonical" href="index.html" />
+    </style>
 
-    </head>
+    <link rel="canonical" href="index.html"/>
 
-    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" class="top">
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" class="top">
 
 <!-- Google Tag Manager (noscript) -->
 
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMMPR35"
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMMPR35"
 
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
 
 <!-- End Google Tag Manager (noscript) -->
 
 
-
-
-
-        <!-- Preloader-->
+<!-- Preloader-->
 <!--    <div id="preloader">
       <div id="status"></div>
     </div>-->
@@ -116,85 +118,57 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </button>
             <a href="{% url 'asqapp:index' %}" class="navbar-brand page-scroll">
                 <!-- Text or Image logo-->
-                <img src="{% static 'img/misc/favicon.png' %}" alt="Logo" class="logo" height="150px" width="150px">
-                <img src="{% static 'img/misc/favicon.png' %}" alt="Logo" class="logodark" height="150px" width="150px">
+                <img src="{% static 'img/misc/favicon.png' %}" alt="Logo" class="logo" height="100px" width="100px">
+                <img src="{% static 'img/misc/favicon.png' %}" alt="Logo" class="logodark" height="100px" width="100px">
             </a>
         </div>
         <div class="collapse navbar-collapse navbar-main-collapse">
             <ul class="nav navbar-nav navbar-left">
                 <li class="hidden"><a href="#page-top"></a></li>
-                <li><a href="index.html"><h3 style="color:#C5B358;">Project</h3></a></li>
-                <li><a href="about.html"><h3 style="color:#C5B358;">Work</h3></a></li>
-                <li><a href="services.html"><h3 style="color:#C5B358;">About</h3><span class="caret"></span></a></li>
+                <li><a href="{% url 'asqapp:project' %}"><h4 style="color:#C5B358;">Project</h4></a></li>
+                <li><a href="{% url 'asqapp:work' %}"><h4 style="color:#C5B358;">Work</h4></a></li>
+                <li><a href="{% url 'asqapp:about' %}"><h4 style="color:#C5B358;">About</h4><span class="caret"></span></a>
+                </li>
             </ul>
         </div>
     </div>
 </nav>
 
 
-
-
 <section style="background-color:black;">
-<br><br><br><br><br><br>
-		<div class="container">
+    <br><br><br><br><br><br>
+    <div class="container">
 
-			<article>
+        <article>
 
-					<h2 style="color:#C5B358;">BRING WORLD TOGETHER</h2>
+            <h2 style="color:#C5B358;">BRING WORLD TOGETHER</h2>
 
-					<h4 style="text-align: justify;font-weight: 400;line-height: 45px;color:#C5B358;">
-                        <p>A Square London (ASL) is
-						an Entertainment & Fashion Management organization launched in 2013 in London by Fashion
-						Designers Akhil & Aiswarya. ASL produces Fashion Weeks, Fashion Reality Shows, Top Model
-						Shows, International Fashion and Lifestyle Awards & Trade Fairs. ASL focused to showcase
-						and exhibit creative talents in the Fashion industry from across the globe on a single
-						platform. Through its global connection, ASL will provide not only the finest brands and
-						international designers to exhibit and showcase their creative art, but also introduce
-						SME’s and YOUNG EMERGING TALENTS to market their innovative designs around the globe.
-						‘A Square London’ was established in London and it has been executing Fashion Shows,
-						Reality Shows, and Fashion & Lifestyle awards with global strength.
-						<br><br>
-						Our team comprises highly Experienced & Talented Professionals and more importantly
-						people with a Vision, and, one Goal to make the World a smaller place. Smaller in terms
-						of Distance, Culture, Food, and Creativity. “We bring the World Together” through our
-						different projects in various countries.</p>
-					</h4>
+            <h4 style="text-align: justify;font-weight: 400;line-height: 45px;color:#C5B358;">
+                <p>A Square London (ASL) is
+                    an Entertainment & Fashion Management organization launched in 2013 in London by Fashion
+                    Designers Akhil & Aiswarya. ASL produces Fashion Weeks, Fashion Reality Shows, Top Model
+                    Shows, International Fashion and Lifestyle Awards & Trade Fairs. ASL focused to showcase
+                    and exhibit creative talents in the Fashion industry from across the globe on a single
+                    platform. Through its global connection, ASL will provide not only the finest brands and
+                    international designers to exhibit and showcase their creative art, but also introduce
+                    SME’s and YOUNG EMERGING TALENTS to market their innovative designs around the globe.
+                    ‘A Square London’ was established in London and it has been executing Fashion Shows,
+                    Reality Shows, and Fashion & Lifestyle awards with global strength.
+                    <br><br>
+                    Our team comprises highly Experienced & Talented Professionals and more importantly
+                    people with a Vision, and, one Goal to make the World a smaller place. Smaller in terms
+                    of Distance, Culture, Food, and Creativity. “We bring the World Together” through our
+                    different projects in various countries.</p>
+            </h4>
 
-			</article>
+        </article>
 
-		</div>
-	</section>
+    </div>
+</section>
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- Footer Section-->
+<!-- Footer Section-->
 <style>
     .footer h6{
         margin: 0px 0px 0px 0px;
@@ -214,21 +188,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
     .flcontainer{
         /* vertical-align: middle; */
-        margin-top: 18%;
+        margin-top: 10%;
     }
     .footersocial {
         /* vertical-align: middle; */
-        margin-top: 18%;
+        margin-top: 10%;
     }
-    .contacttypo{
-        padding: 30px 20px;
-        filter: gray; /* IE6-9 */
-        -webkit-filter: grayscale(100%);
-    }
-    .contacttypo:hover{
-        filter: none;
-        -webkit-filter: grayscale(0%);
-    }
+
     .copyright{
         padding: 5px 0px 5px 0px; margin: 0px 0px 0px 0px;
     }
@@ -253,90 +219,62 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         }
         .copyright{
             font-size: 12px;
-            font-weight: 100;
+            font-weight: 80;
             text-align: center;
         }
-
-        .my_footer{
-    position:fixed;
-    background-color:#F2EAE7;
-    height:25px;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-}
-
     }
+
+
 </style>
 <section class="section-small footer  bg-black">
     <div class="container-fluid">
         <div class="row">
-
-            <div class="col-md-4 col-sm-12 text-center" >
-                <!--<h6>We <i class="fa fa-heart fa-fw"></i> creative people</h6>-->
-                 class="img-rounded img-responsive contacttypo"   alt="" style="margin-left:1425px;">
-
-            </div>
-
+            <img src="{% static 'img/misc/favicon.png' %}" class="img-rounded img-responsive " alt=""
+                 style="padding:10px 10px 10px 0px;margin-left:780px;">
         </div>
-
-    </div>
-</section>
-<section class="section-small footer bg-dark2 no-pad no-margin" >
-    <div class="footer navbar-fixed-bottom my_footer">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <div style="background-color:black;">
-                <img src="{% static 'img/misc/favicon.png' %}" style="background-color:black;">
-                    </div>
-                <div class="copyright" style=" padding:10px 10px 10px 0px; color:#C5B358;background-color:black;">
-                    <a href="index.html"><h5 style="color:#C5B358;background-color:black;"> &#x24B8; 2021 A Square London | All Rights Reserved</h5></a>
-                </div>
+        <div class="col-sm-12 text-center">
+            <div class="copyright" style=" padding:10px 10px 10px 0px;color:#C5B358;">
+                &#x24B8; 2021 <h5> A Square London | All Rights Reserved</h5>
             </div>
         </div>
     </div>
-    </div>
 </section>
 
-<a href="https://api.whatsapp.com/send?phone=919999767666&amp;text=Let%e2%80%99s%20brew%20thoughts." target="_blank"> <img src="img/whatsup.png" style="position: fixed; bottom right; z-index: 999; bottom:10px; right:10px;" alt=""/></a>
 
-<!--<a href="https://api.whatsapp.com/send?phone=919999777471&amp;text=Let’s brew thoughts." target="_blank"> <img src="img/Whatsapp.svg" style="position: fixed; bottom right; z-index: 999; bottom:10px; right:10px; height:30px; height:30px" alt=""/></a>-->
-         <!-- jQuery-->
-    <script src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
-    <!-- Bootstrap Core JavaScript-->
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
-    <!-- Plugin JavaScript-->
-    <script src="{% static 'js/jquery.easing.min.js' %}"></script>
-    <script src="{% static 'js/jquery.countdown.min.js' %}"></script>
-    <script src="{% static 'js/device.min.js' %}"></script>
-    <script src="{% static 'js/form.min.js' %}"></script>
-    <script src="{% static 'js/jquery.placeholder.min.js' %}"></script>
-    <script src="{% static 'js/jquery.shuffle.min.js' %}"></script>
-    <script src="{% static 'js/jquery.parallax.min.js' %}"></script>
-    <script src="{% static 'js/jquery.circle-progress.min.js' %}"></script>
-    <script src="{% static 'js/jquery.swipebox.min.js' %}"></script>
-    <script src="{% static 'js/smoothscroll.min.js' %}"></script>
-    <script src="{% static 'js/wow.min.js' %}"></script>
-    <script src="{% static 'js/jquery.smartmenus.js' %}"></script>
-        <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/-->
-        <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3E86i8mx1BZDlAaLcknh_mWl4F70i4os"></script>-->
-        <!--<script src="js/map.js"></script>-->
+<!-- jQuery-->
+<script src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
+<!-- Bootstrap Core JavaScript-->
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<!-- Plugin JavaScript-->
+<script src="{% static 'js/jquery.easing.min.js' %}"></script>
+<script src="{% static 'js/jquery.countdown.min.js' %}"></script>
+<script src="{% static 'js/device.min.js' %}"></script>
+<script src="{% static 'js/form.min.js' %}"></script>
+<script src="{% static 'js/jquery.placeholder.min.js' %}"></script>
+<script src="{% static 'js/jquery.shuffle.min.js' %}"></script>
+<script src="{% static 'js/jquery.parallax.min.js' %}"></script>
+<script src="{% static 'js/jquery.circle-progress.min.js' %}"></script>
+<script src="{% static 'js/jquery.swipebox.min.js' %}"></script>
+<script src="{% static 'js/smoothscroll.min.js' %}"></script>
+<script src="{% static 'js/wow.min.js' %}"></script>
+<script src="{% static 'js/jquery.smartmenus.js' %}"></script>
+<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/-->
+<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3E86i8mx1BZDlAaLcknh_mWl4F70i4os"></script>-->
+<!--<script src="js/map.js"></script>-->
 
 
-    <!-- Custom Theme JavaScript-->
+<!-- Custom Theme JavaScript-->
 
-    <script src="{% static 'js/universal.js' %}"></script>
+<script src="{% static 'js/universal.js' %}"></script>
 <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-        <!-- Youtube video background-->
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<!-- Youtube video background-->
 
-        <script src="{% static 'owlcarousel/owl.carousel.min.js' %}"></script>
+<script src="{% static 'owlcarousel/owl.carousel.min.js' %}"></script>
 
-        <script>
+<script>
 
             $(document).ready(function () {
 
@@ -444,9 +382,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             });
 
-        </script>
 
-    </body>
+
+</script>
+
+</body>
 
 
 <!-- Mirrored from www.coffeeandcreative.in/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Aug 2021 05:40:46 GMT -->
