@@ -16,3 +16,7 @@ def project(request):
 
 def work(request):
     return render(request,"work.html")
+
+
+def register(request):
+    return render(request,"register.html")
